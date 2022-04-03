@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+</head>
+
+<body>
+    <h1 style="color:orange">Kabilan registration form :</h1>
+    <style>
+    body{
+        background-color:black;
+        color:skyblue;
+    }
+    input{
+       margin-top:50px;
+       margin-left:99px;
+       outline:none;
+       height:20px;
+       color:blue;
+       border:none;
+       border-bottom:1px solid green;
+       background:transparent;
+
+      }
+
+
+   button{
+     color:blue;
+     background-color:pink;
+     border-radius:50px;
+     margin-top:85px;
+     margin-left:130px;
+     width:250px;
+     height:100px;
+     font-size:20px;
+}
+       body {
+
+}
+
+     input.first {
+                width:100px;
+                height:30px;
+      }
+      input.second
+      {
+          width:100px;
+          height:30px;
+      }
+
+      label{
+        font-size:50px;
+       }
+
+       button.top
+       {
+           width:120px;
+           margin-left:100px;
+           border-radius:500px;
+
+       }
+
+       #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+    </style>
+     <form action='form.php'>
+    <input id='user'name='ename' placeholder='enter your name :'required>
+    <br><input id='mail' name='email' placeholder='enter your email :'required>
+    <br><input id='password'name='psd' placeholder="enter your password :">
+ <br><button onclick="name();">submit your details after read the terms  and conditions details</button>
+     <div class='alert_cont'>
+</div>                                                                                     <p style="text-align: justify"><p style="text-align: right"><p style="text-align: left"><p style="text-align: left"><p style="text-align: center"><span style="line-height: normal"><p style="text-align: justify"><p style="text-align: right"><p style="text-align: center"><p style="text-align: left"><span style="line-height: normal"></span></p></p></p></p></span></p></p></p></p></p>
+<div class='alert_box'>
+
+</div>
+<input type='checkbox' class=first>
+<label>This registration form is created for a practise because now im started to learn HTML,CSS,JAVASCRIPT so i'm just practising on it. you can't do anything through this registration form </label>
+ <br><br><br>
+<input type='checkbox' class=second>
+<label>But don't worry every weekends i'll update my registration form as my mini website you just keep support me </label>
+<br><br><br><button style="background-color:yellow" onclick="alert('Your account successfully registered :)')">Finally submit your details</button>
+     </form>
+
+       <button onclick="topFunction()" id="myBtn" title="Go to top" class=top>ckick me to go top of the page</button>
+
+
+<script>
+
+  //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function name()
+{
+    var nam=document.getElementById("user").value;
+    alert(nam);
+}
+</script>
+
+</body>
+
+
+</html>
+
+
